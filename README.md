@@ -1,106 +1,71 @@
-# Internet-Archive-Java-automation-testing
+This repository contains a Selenium-based automated test suite for verifying key functionalities of the Internet Archive web application.
 
-Here’s a professional `README.md` you can use for your GitHub repository based on the provided code:
+📌 Project Overview
+Tester: Viktor
+Test Period: 7 days
+App URL: https://archive.org
 
----
+✅ Objective
+Ensure that critical functionalities of the Internet Archive website work as expected. Tests focus on:
 
-# Archive.org Automated Testing Suite
+Invalid email validation on sign-up
 
-This project is an automated UI testing suite for the [Archive.org](https://archive.org) website. It is written in Java using Selenium WebDriver and TestNG. The tests validate several key functionalities of the site, including form validation, search functionality, sorting, upload access restrictions, and navigation.
+Search functionality for books
 
-## Technologies Used
+Sorting validation of movie listings
 
-* Java
-* Selenium WebDriver
-* TestNG
-* Maven (assumed for dependency management)
-* ChromeDriver / FirefoxDriver
+Upload access control (authentication required)
 
-## Project Structure
+Correct page redirection through navigation
 
-* **Tests Package**: Contains all test classes.
-* **Pages Package**: Follows the Page Object Model (POM) for page interactions.
-* **Utils Package**: Contains shared utilities like base setup, configuration, and custom wait methods.
+🔬 Scope of Testing
+Input validation and error messages
 
-## Prerequisites
+Search result verification
 
-* Java JDK 8 or higher
-* Maven
-* Chrome or Firefox browser
-* Selenium WebDriver dependencies
-* TestNG framework
+Sorting logic confirmation
 
-## How to Run the Tests
+Authentication enforcement
 
-1. Clone the repository:
+Navigation and URL validation
 
-   ```bash
-   git clone https://github.com/ViktorQA1997/FinalProject-Quantox-Academy-Internet-Archive-Java-automation-testing.git
-   ```
-2. Open the project in your preferred Java IDE (e.g., IntelliJ, Eclipse).
-3. Make sure the WebDriver paths are correctly set in the `BaseClass`.
-4. Run the test suite using TestNG.
+🧪 Testing Types
+Automated Functional Testing
 
-## Test Cases Overview
+UI Validation
 
-### Test 1: Invalid Email Sign-Up Validation
+Negative Testing
 
-* **Purpose**: Verify that sign-up cannot be completed without a valid email.
-* **Flow**:
+Page Redirection Validation
 
-  * Navigate to the Archive.org movies page.
-  * Attempt to sign up with various invalid emails.
-  * Confirm that the proper error message is displayed.
+🛠️ Test Environment
+Browsers: Chrome, Firefox
 
-### Test 2: Search Results for a Book
+OS: Windows 10
 
-* **Purpose**: Verify that searching for "Gravity" returns results.
-* **Flow**:
+Tools: Selenium WebDriver, TestNG, IntelliJ IDEA
 
-  * Navigate to the Archive.org books section.
-  * Perform an advanced search for the keyword "Gravity".
-  * Validate that results are displayed.
+Environment URL: https://archive.org
 
-### Test 3: Sorting Validation
+📄 Test Cases (Summary)
+TC ID	Title	Priority	Status
+TC01	Invalid email sign-up validation	High	✅ Pass
+TC02	Search results for "Gravity" book	High	✅ Pass
+TC03	Sorting validation for movies	Medium	✅ Pass
+TC04	Upload requires authentication	High	✅ Pass
+TC05	Navigation to Feature Films	Medium	✅ Pass
 
-* **Purpose**: Verify that movie results are properly sorted by title.
-* **Flow**:
+🚧 Known Issues
+Shadow DOM sorting validation is currently commented out and requires additional handling for ShadowRoot elements.
 
-  * Navigate to the colorized movies section.
-  * Sort by title.
-  * Validate that the correct URL is loaded (additional sorting validation can be uncommented).
+🔄 Recommendations
+Replace implicit waits with explicit waits for more stable test execution.
 
-### Test 4: Upload Requires Authentication
+Extend Shadow DOM element handling for complete sorting validation.
 
-* **Purpose**: Confirm that upload functionality requires user login.
-* **Flow**:
+🤖 Automation Coverage
+All test cases (TC01 – TC05) are covered by Selenium automation.
 
-  * Navigate to the Archive.org homepage.
-  * Click on the upload button.
-  * Validate that the site prompts the user to log in.
-
-### Test 5: Navigation to Feature Films
-
-* **Purpose**: Validate that the user is redirected to the correct Feature Films page.
-* **Flow**:
-
-  * Navigate to the videos section.
-  * Click on Movies > Feature Films.
-  * Validate that the correct URL is loaded.
-
-## Notes
-
-* The project uses implicit waits for simplicity. Consider replacing them with explicit waits for more robust synchronization.
-* Some verification steps related to Shadow DOM elements are currently commented out. These can be implemented later if required.
-
-## Contribution
-
-Feel free to fork the repository, open issues, or submit pull requests to improve the test coverage or structure.
-
-## License
-
-This project is open-source and available under the MIT License.
-
----
-
-If you want, I can also create a version with badges, more detailed setup instructions, or specific Maven configurations. Just let me know!
+📬 Contact
+Author: Viktor Kokeza
+📧 Email: viktor.kokeza@gmail.com
