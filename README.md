@@ -35,7 +35,7 @@ This project is an automated UI testing suite for the [Archive.org](https://arch
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/archive-testing-suite.git
+   git clone [https://github.com/yourusername/archive-testing-suite](https://github.com/ViktorQA1997/FinalProject-Quantox-Academy-Internet-Archive-Java-automation-testing.git
    ```
 2. Open the project in your preferred Java IDE (e.g., IntelliJ, Eclipse).
 3. Make sure the WebDriver paths are correctly set in the `BaseClass`.
